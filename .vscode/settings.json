@@ -1,0 +1,12 @@
+{    
+    "cmake.generator": "Ninja",
+    // "cmake.configureArgs": [
+    //     "-DCMAKE_C_COMPILER=clang-cl",
+    //     "-DCMAKE_CXX_COMPILER=clang-cl",
+    //     "-DCMAKE_CUDA_HOST_COMPILER=cl.exe"
+    // ],
+    "C_Cpp.default.intelliSenseMode": "windows-clang-x64",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.default.compilerPath":"C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/Llvm/bin/clang-cl.exe"
+}

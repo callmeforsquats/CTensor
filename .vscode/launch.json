@@ -1,0 +1,49 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Debug TREN",
+//             "type": "cppvsdbg",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/dist/Debug/test.exe", // Путь к готовому экзешнику
+//             "args": [],
+//             "stopAtEntry": false,
+//             "cwd": "${workspaceFolder}",
+//             "visualizerFile": "${workspaceFolder}/tensor.natvis",
+//             "preLaunchTask": "Debug",     // Вызывает задачу из шага 2
+//             "console": "integratedTerminal"
+//         },
+//         {
+//             "name": "ASAN TREN",
+//             "type": "cppvsdbg",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/dist/Debug/test.exe", // Путь к готовому экзешнику
+//             "args": [],
+//             "stopAtEntry": false,
+//             "cwd": "${workspaceFolder}",
+//             "visualizerFile": "${workspaceFolder}/tensor.natvis",
+//             "preLaunchTask": "ASAN",     // Вызывает задачу из шага 2
+//             "console": "integratedTerminal"
+//         }
+//     ]
+// }
+
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CUDA/C++ Debug",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        { "name": "PATH", "value": "${env:PATH};C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin" }
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

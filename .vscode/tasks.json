@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Debug",
+            "type": "shell",
+            "command": "${workspaceFolder}/build_debug.bat",
+            "problemMatcher": ["$msCompile"]
+        },
+        {
+            "label":"ASAN",
+            "type":"shell",
+            "command":"${workspaceFolder}/build_asan.bat",
+            "problemMatcher":["$msCompile"]
+        }
+    ]
+}
